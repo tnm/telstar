@@ -4,6 +4,7 @@ telstar
 Simple-as-possible, personal link shortener with Bottle and Redis. Uses Redis' INCR function for a interesting change from the usual BASE and random stuff. 
 
 Requires: 
+ 
 * Redis
 * Bottle
 * redis-py
