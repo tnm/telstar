@@ -11,7 +11,7 @@ Requires:
 
 * [redis-py](http://github.com/andymccurdy/redis-py "redis-py")
 
-telstar is directly inspired by Dave Jeffery's tinchy, Leah Culver's tinytinyurl, and also by Cake's song Daria (which was playing in the couple of minute when telstar was written).
+telstar is directly inspired by Dave Jeffery's tinchy, Leah Culver's tinytinyurl, and also by Cake's song Daria (which was playing in the couple of minutes when telstar was written).
 
 author: Ted Nyman
 
