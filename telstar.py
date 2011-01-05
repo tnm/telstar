@@ -1,7 +1,12 @@
 """
-telstar | Personal link shortener with Bottle and Redis. Unless you are creating over 100,000 links for yourself, this beyond dead-simple and quick Redis increment function should do nicely.
+telstar 
+-------
 
-telstar is directly inspired by davej's tinchy, Leah Culver's TinyTinyUrl, and also by Cake's song Daria (during which telstar was written)
+Personal link shortener with Bottle and Redis. Unless you are creating over 100,000 
+links for yourself, this beyond dead-simple and quick Redis increment function should do nicely.
+
+telstar is directly inspired by davej's tinchy, Leah Culver's TinyTinyUrl, and also by Cake's 
+song Daria (during which telstar was written)
 
 author: Ted Nyman
 license: MIT
@@ -13,7 +18,7 @@ import redis
 
 r = redis.Redis()
 
-#your site's domain. in the newer versions of Bottle, you can just use request.url instead.
+# your site's domain. in the newer versions of Bottle, you can just use request.url instead.
 BASEURL = "http://localhost:8080/"
 
 @route('/')
