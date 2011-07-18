@@ -41,15 +41,13 @@ h1{color:orange; font-family: Helvetica, Arial;}
 @route('/', method='POST')
 def make_small_url():
     big_url = request.POST.get('url', '').strip()
-    if big_url[:7] == "http://":
-        small_id = r.incr("url:all")
-        small_id = str(small_id)
-        set_big_url = r.set(big_url, small_id)
-	set_small_url = r.set(small_id, big_url)
-        small_url = BASEURL + small_id
-        return 'Your small url is: <a href="{0}">{0}</a>'.format(small_url)
-    else:
-        return 'Dude, that is not a legit URL. It needs to start with <strong>http:// </strong><a href="/">Get real.</a>'
+    small_id = str(r.incr("url:all"))
+    
+    set_big_url = r.set(big_url, small_id)
+    set_small_url = r.set(small_id, big_url)
+    
+    small_url = BASEURL + small_id
+    return 'Your small url is: <a href="{0}">{0}</a>'.format(small_url)
   
 @route('/:small_id')
 def redirect_to_big_url(small_id):
