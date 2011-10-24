@@ -18,5 +18,6 @@ With the deps installed and a running redis-server on localhost, `python telstar
 to `http://localhost:8080/` and start shortening links.
 
 author: Ted Nyman
+
 license: MIT
 
